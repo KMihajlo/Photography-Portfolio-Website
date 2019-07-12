@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mihajlo's portfolio</title>
+    <meta name="keywords" content="home, welcome page, website, portfolio, photography">
+    <meta name="description" content="Photography portfolio website">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="slideshow.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function()
+        {
+            if($(window).scrollTop())
+            {
+                $('nav').addClass('black');
+            }
+            else
+            {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+
+</head>
+<body>
+    <header class="intro">
+        <nav>
+            <div class="logo">M.K</div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About me</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact me</a></li>
+            </ul>
+        </nav>
+        <div class="intro-header" id="Home">
+            <h1>MIHAJLO KRAGUJEVSKI</h1>
+            <p>PHOTOGRAPHY PORTFOLIO</p>
+        </div>
+        <div class="intro-slideshow">
+            <img src="Woods/svetilka.jpg" alt="Burden" class="slideshow-img">
+            <img src="Perplexingly%20amusing/watch.jpg" alt="1933" class="slideshow-img">
+            <img src="Perplexingly%20amusing/silence.jpg" alt="Silence" class="slideshow-img">
+            <img src="Woods/svetilka2.jpg" alt="Center" class="slideshow-img">
+            <img src="Perplexingly%20amusing/snow.jpg" alt="Hope" class="slideshow-img">
+        </div>
+    </header>
+    <div id="About">
+        <div>
+            <img src="me.png" alt="Myself">
+        </div>
+        <div>
+            <h2>BEHIND THE CAMERA</h2>
+            <div>
+                <p>A Photographer specialized in portraiture, landscape photography and cinematic storytelling.<br><br><br>
+                On this site you can see some of my personal projects, collaborations and selected works.<br><br><br>
+                The collection is still growing so feel free to dive in!</p>
+            </div>
+        </div>
+    </div>
+    <div id="Portfolio">
+        <h2>PORTFOLIO</h2>
+    </div>
+    <div class="perp">
+        <h3>Perplexingly Amusing</h3>
+        <div class="perpImg">
+            <img src="Perplexingly%20amusing/snow.jpg" alt="hope">
+            <img src="Perplexingly%20amusing/silence.jpg" alt="silence">
+            <img src="Perplexingly%20amusing/cat.jpg" alt="cat">
+            <img src="Perplexingly%20amusing/10pm.jpg" alt="10pm">
+            <img src="Perplexingly%20amusing/park.jpg" alt="empty">
+            <img src="Perplexingly%20amusing/fridge.jpg" alt="searching">
+            <img src="Perplexingly%20amusing/dust.jpg" alt="dust">
+        </div>
+        <h4>A quiet zone</h4>
+        <p>Burning cities;  large crowds of people talking, walking by me, yelling;
+            the sun is no longer up and the sky is losing its color, it’s becoming monotone and I like it.<br>
+            The constant repetition, time never stopping and yet again I’m in my head.
+            It’s getting dark though, I should head home.</p>
+
+        <img src="Perplexingly%20amusing/watch.jpg" alt="1933">
+        <img src="Perplexingly%20amusing/core.jpg" alt="unexpected core">
+    </div>
+    <div class="woods">
+        <h2>Woods</h2>
+        <div class="woodsImg">
+            <img src="Woods/freedom.jpg" alt="freedom">
+            <img src="Woods/shisharka.jpg" alt="stay put">
+            <img src="Woods/profile1.jpg" alt="innocense">
+            <img src="Woods/profile2.jpg" alt="courage">
+            <img src="Woods/svetilka.jpg" alt="burden" class="burden">
+            <img src="Woods/profile5.jpg" alt="save">
+        </div>
+        <p>I stood staring, staring – half lost, learning a new language or rather the same language in a different dialect.
+            So still were the big woods where I stood, sound might not yet have been born.</p>
+        <img src="Woods/profile4.jpg" alt="calm" class="calm">
+        <img src="Woods/svetilka2.jpg" alt="center" class="center">
+    </div>
+    <div id="Contact" class="cnt">
+
+        <h2>HAVE A PROJECT?</h2>
+        <p>I enjoy doing any kind of photography related work. So if you want to work with me - don't hesitate to fill the form below!</p>
+        <div class="border"></div>
+        <form class="contact-form" action="home.html" method="post">
+            <input type="text" class="contact-form-text" placeholder="Your name">
+            <input type="email" class="contact-form-text" placeholder="Your email">
+            <input type="text" class="contact-form-text" placeholder="Your phone">
+            <textarea class="contact-form-text" placeholder="Your message"></textarea>
+            <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+    </div>
+    <footer>
+        Copyright &copy; 2019 Mihajlo Kragujevski
+        <a href="https://www.instagram.com/goghtism/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/mihajlo-kragujevski/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/KMihajlo" target="_blank" class="fa fa-github"></a>
+    </footer>
+</body>
+</html>

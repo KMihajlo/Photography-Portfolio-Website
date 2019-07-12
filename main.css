@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: ghostwhite;
+    color: #ffffff;
+}
+nav
+{
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 3px 50px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+nav.black
+{
+    background: rgba(0,0,0,0.8);
+    height: 70px;
+    padding: 5px 70px;
+}
+nav .logo
+{
+    padding: 18px 14px;
+    height: 70px;
+    float: left;
+    font-size: 24px;
+    transition: .3s;
+}
+nav.black .logo
+{
+    color: #ffffff;
+}
+nav ul
+{
+    list-style: none;
+    float: right;
+    margin-top: -3px;
+    padding: 0;
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    line-height: 70px;
+    color: #ffffff;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+nav.black ul li a
+{
+    color: #ffffff;
+}
+nav.black ul li a:hover
+{
+    color: orangered;
+}
+nav ul li a:focus
+{
+    outline: none;
+}
+nav ul li a.active
+{
+    background: #E2472F;
+    color: #fff;
+    border-radius: 6px;
+}
+li a:hover {
+    color: orangered;
+}
+.intro
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div.intro-slideshow
+{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.slideshow-img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+    filter: brightness(70%);
+}
+.intro-header
+{
+    color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem 2.5rem;
+    letter-spacing: 0.1rem;
+}
+.intro-header h1
+{
+    margin-bottom: 0.75rem;
+    margin-top: 270px;
+}
+.intro-header p
+{
+    display: inline-block;
+    animation: type 3s steps(21);
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes type {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 21ch;
+    }
+}
+#About
+{
+    margin-top: -405px;
+    height: 470px;
+    color: #000000;
+    background-color: #efefef;
+}
+#About > div:first-of-type
+{
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#About img
+{
+    top: 0;
+    left: 0;
+    height: 65%;
+    margin-left: 170px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+#About > div:last-of-type
+{
+    float: right;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: -70px;
+}
+#About h2
+{
+    margin-bottom: 70px;
+}
+#Portfolio
+{
+    height: 100px;
+    padding-bottom: 20px;
+    background-color: #efefef;
+}
+#Portfolio h2
+{
+    color: #ffffff;
+}
+.perp
+{
+    color: #ffffff;
+    background-color: #070707;
+    height: 1250px;
+    align-items: center;
+    text-align: center;
+}
+.perpImg
+{
+    padding-top: 50px;
+}
+.perp h3
+{
+    padding-top: 40px;
+}
+.perp img
+{
+    height: 300px;
+    padding: 6px;
+}
+.perp h4
+{
+    padding: 20px;
+    margin-top: 30px;
+}
+.perp p
+{
+    margin-bottom: 30px;
+}
+.woods
+{
+    background-color: #cecece;
+    color: #000;
+    height: 1500px;
+    align-items: center;
+    text-align: center;
+}
+.woods h2
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.woodsImg img
+{
+    height: 320px;
+    padding: 6px;
+}
+.woods p
+{
+    width: 90%;
+    padding: 60px;
+    font-size: 18px;
+}
+.calm
+{
+    height: 500px;
+    padding-right: 10px;
+}
+.center
+{
+    height: 500px;
+}
+#Portfolio h2
+{
+    color: #000000;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#Contact
+{
+    background: url("contact-background.JPG") no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+}
+#Contact h2
+{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+#Contact p
+{
+    color: #fff;
+    text-align: center;
+}
+.border
+{
+    width: 100px;
+    height: 5px;
+    margin: 10px auto;
+}
+.contact-form
+{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-form-text
+{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #070707;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+.contact-form-text:focus
+{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text
+{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn
+{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-form-btn:hover
+{
+    background: #2980b9;
+}
+footer
+{
+    color: lightgray;
+    font-size: 13px;
+    padding: 0.5%;
+    background-color: #262626;
+    align-items: center;
+    text-align: center;
+}
+.fa
+{
+    padding: 5px;
+    font-size: 2px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa:hover
+{
+    color: #E2472F;
+}
+.fa-instagram
+{
+    background: transparent;
+    color: white;
+}
+.fa-linkedin
+{
+    background: transparent;
+    color: white;
+}
+.fa-github
+{
+    background: transparent;
+    color: white;
+}
