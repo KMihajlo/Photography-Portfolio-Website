@@ -12,11 +12,11 @@ body
 {
     font-family: 'Montserrat', sans-serif;
     background-color: ghostwhite;
-    color: #ffffff;
+    color: white;
 }
 nav
 {
-    color: #ffffff;
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@ nav .logo
 }
 nav.black .logo
 {
-    color: #ffffff;
+    color: white;
 }
 nav ul
 {
@@ -59,7 +59,7 @@ nav ul li
 nav ul li a
 {
     line-height: 70px;
-    color: #ffffff;
+    color: #fce1e1;
     padding: 12px 30px;
     text-decoration: none;
     text-transform: uppercase;
@@ -67,7 +67,7 @@ nav ul li a
 }
 nav.black ul li a
 {
-    color: #ffffff;
+    color: white;
 }
 nav.black ul li a:hover
 {
@@ -80,7 +80,7 @@ nav ul li a:focus
 nav ul li a.active
 {
     background: #E2472F;
-    color: #fff;
+    color: white;
     border-radius: 6px;
 }
 li a:hover {
@@ -113,7 +113,7 @@ div.intro-slideshow
 }
 .intro-header
 {
-    color: #ffffff;
+    color: white;
     border-radius: 0.5rem;
     padding: 2rem 2.5rem;
     letter-spacing: 0.1rem;
@@ -181,11 +181,11 @@ div.intro-slideshow
 }
 #Portfolio h2
 {
-    color: #ffffff;
+    color: white;
 }
 .perp
 {
-    color: #ffffff;
+    color: white;
     background-color: #070707;
     height: 1250px;
     align-items: center;
@@ -262,7 +262,7 @@ div.intro-slideshow
 #Contact h2
 {
     text-align: center;
-    color: #ffffff;
+    color: white;
     margin-bottom: 40px;
     margin-top: 30px;
 }
